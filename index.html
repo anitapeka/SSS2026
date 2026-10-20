@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accesso al Server Docker</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #2b5876 0%, #4e4376 100%);
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .login-card {
+            background-color: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            width: 320px;
+            text-align: center;
+        }
+        .login-card h2 {
+            margin-top: 0;
+            color: #333;
+            font-size: 26px;
+        }
+        .login-card p {
+            color: #777;
+            font-size: 14px;
+            margin-bottom: 25px;
+        }
+        .input-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        .input-group label {
+            display: block;
+            margin-bottom: 6px;
+            color: #444;
+            font-weight: bold;
+            font-size: 13px;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            box-sizing: border-box; /* Mantiene il padding nei limiti della larghezza */
+            font-size: 14px;
+            transition: border-color 0.3s;
+        }
+        .input-group input:focus {
+            border-color: #2b5876;
+            outline: none;
+            box-shadow: 0 0 5px rgba(43, 88, 118, 0.3);
+        }
+        .submit-btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 14px;
+            width: 100%;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.1s;
+        }
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+        .submit-btn:active {
+            transform: scale(0.98);
+        }
+        .icon {
+            width: 50px;
+            height: 50px;
+            background-color: #007bff;
+            border-radius: 50%;
+            display: inline-block;
+            margin-bottom: 15px;
+            line-height: 50px;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-card">
+        <div class="icon">D</div>
+        <h2>Benvenuto</h2>
+        <p>Accedi al tuo server Docker locale</p>
+        
+        <form>
+            <div class="input-group">
+                <label for="username">Nome utente</label>
+                <input type="text" id="username" name="username" placeholder="Inserisci il tuo username" required>
+            </div>
+            
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Inserisci la password" required>
+            </div>
+            
+            <button type="submit" class="submit-btn">Accedi</button>
+        </form>
+    </div>
+
+</body>
+</html>
